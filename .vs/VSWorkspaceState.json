@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Controller",
+    "\\src\\Entity",
+    "\\src\\Entity\\Trait",
+    "\\src\\Form",
+    "\\src\\Repository",
+    "\\templates",
+    "\\templates\\registration",
+    "\\templates\\_partials"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\templates\\registration\\register.html.twig",
   "PreviewInSolutionExplorer": true
 }

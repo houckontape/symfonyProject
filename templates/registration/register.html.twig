@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+<section class="containner-fluid">
+    <div class="row align-items-center">
+    
+    
+    <div class="row md-1 ">
+        <h1>Inscription</h1>
+        {{ form_start(registrationForm) }}
+            <div class="mb-3">
+                <h3>Identité</h3>
+                {{ form_row(registrationForm.lastname) }}
+                {{ form_row(registrationForm.firstname) }}
+            </div>
+            <div class="mb-3">
+                {{ form_row(registrationForm.email) }}
+            </div>
+            <div class="mb-3">
+                <div class="mb-3" aria-describedby="passwordHelpBlock" >
+                    {{ form_row(registrationForm.plainPassword, {
+                        label: 'Mot de passe '
+                    }) }}
+                </div>
+                <div id="passwordHelpBlock" class="form-text">
+                    votre mot de passe doit comporter 8 a 20 characteres
+                 </div>
+             </div>
+            <div class="mb-3">
+                {{ form_row(registrationForm.RgpdConsent) }}
+             </div>
+             <div class="mb-3">
+                <button type="submit" class="btn btn-outline-dark">Inscription</button>
+             </div>
+        {{ form_end(registrationForm) }}
+    
+      </div>
+    </div>
+</section>
+    
+{% endblock %}
